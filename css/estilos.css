@@ -67,6 +67,10 @@ body{
     padding: 0 10px;
     margin-right: 10px;
 }
+.redesHeader li a:hover{
+    animation-name: zoomIn;
+    animation-duration: 2s;
+}
 
 .redesHeader img{
     margin-top: 15px;
@@ -82,7 +86,7 @@ body{
     justify-items: center;
 }
 
-.animacion1{
+.animacionH1{
     animation-name: fadeIn;
     animation-duration: 5s;
 }
@@ -128,7 +132,8 @@ body{
 .navBarHeader a:hover{
     background-color: #aba08a;
     color: black;
-    animation-duration: 5s;
+    
+    transition: 1s;
 }
 .miFooter{
     display: grid;
@@ -217,6 +222,11 @@ body{
     height: 20px;
     }
 
+.redesFooter li a:hover{
+    animation-name: zoomIn;
+    animation-duration: 2s;
+}
+
 
 .burgerMenu{
     display: none;
@@ -259,6 +269,31 @@ body{
 .portada__imagen img{
     width: 270px;
     
+}
+.img3{
+    
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+.img1{
+    
+    animation-name: fadeIn;
+    animation-duration: 6s;
+}
+.img5{
+    
+    animation-name: fadeIn;
+    animation-duration: 6s;
+}
+.img2{
+    
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+.img4{
+    
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 /*=========================================================================================================*/
 
