@@ -54,7 +54,6 @@ body{
     background-color: black;
     padding: 15px 10px;
     /*width: 100%;/*
-    
     /*justify-content: center;*/
     
 }
@@ -81,6 +80,11 @@ body{
     grid-row: 1/2;
     align-items: center;
     justify-items: center;
+}
+
+.animacion1{
+    animation-name: fadeIn;
+    animation-duration: 5s;
 }
 .titleHeader h1 a{
     /*display: flex;*/
@@ -727,3 +731,6 @@ body{
         margin: 0 10px;
     } 
 }
+
+/*====================================================ANIMACIONES============================================*/
+
