@@ -46,42 +46,43 @@ body{
 
 
 .miHeader{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(2,auto);
-    /*align-items: center;*/
+    
+    text-decoration: none;
+    align-items: center;
     justify-items: center;
     background-color: black;
     padding: 15px 10px;
-    /*width: 100%;/*
-    /*justify-content: center;*/
+    width: 100%;
+    justify-content: center;
     
 }
 
 .redesHeader{
-    grid-column: 10;
-    display: flex;
     text-decoration: none;
-    align-items: start;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
     list-style: none;
+    
     padding: 0 10px;
     margin-right: 10px;
 }
 .redesHeader li a:hover{
     animation-name: zoomIn;
     animation-duration: 2s;
+    text-decoration: none;
+
 }
 
 .redesHeader img{
     margin-top: 15px;
     padding: 0 10px;
-    width: 20px;
+    width: 40px;
     height: 20px;
     }
 
 .titleHeader{
-    grid-column: 4/9;
-    grid-row: 1/2;
+    
     align-items: center;
     justify-items: center;
 }
@@ -91,12 +92,12 @@ body{
     animation-duration: 5s;
 }
 .titleHeader h1 a{
-    /*display: flex;*/
+    display: flex;
     font-family: 'brittany';
     text-decoration: none;
-    /*text-align: center;*/
+    text-align: center;
     font-size: 40px;
-    /*justify-content: center;*/
+    justify-content: center;
     color: white;   
     margin: 5px;
     
@@ -104,14 +105,14 @@ body{
 }
 
 .navBarHeader{
-    grid-column: 1/11;
-    grid-row: 2;
+    display: flex;
+    justify-content: center;
     padding: 10px;
     margin-top: 15px;
 }
 
 .navBarHeader ul li a{
-    font-family: Arial, Helvetica, sans-serif;
+    
     text-decoration: none;
     font-size: 15px;
     color: white;
@@ -120,11 +121,11 @@ body{
     
 }
 
-.flexBarHeader{
+/*.flexBarHeader{
     display: flex;
     justify-content: center;
     list-style: none;
-}
+}*/
 /*li {
     display: inline-block;
     
@@ -152,7 +153,7 @@ body{
     /*justify-content: right;*/
     /*padding-right: 180px;*/
     color:#F5BE51;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     margin-top: 5px; 
     font-size: smaller;
     grid-column: 10;
@@ -164,15 +165,16 @@ body{
     grid-column: 1/11;
     grid-row: 1;
     padding-top: 30px;
+
 }
 
-.navBarFooter a:hover{
+.navBarFooter  a:hover{
     text-decoration: underline;
     
 }
 
-.navBarFooter ul li a{
-    font-family: Arial, Helvetica, sans-serif;
+.navBarFooter li a{
+    /*font-family: Arial, Helvetica, sans-serif;*/
     text-decoration: none;
     
     /*margin-left: 4px;
@@ -218,7 +220,7 @@ body{
 .redesFooter img{
     margin-top: 15px;
     padding: 0 10px;
-    width: 20px;
+    width: 40px;
     height: 20px;
     }
 
@@ -255,13 +257,13 @@ body{
 }
 
 .portada__imagen {
-    /*display: flex;*/
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+    display: flex;
+    /*display: grid;
+    /*grid-template-columns: repeat(5, auto);*/
     list-style: none;
     text-decoration: none;
-    /*justify-content: space-between;*/
-    /*overflow: hidden;*/
+    justify-content: space-between;
+    overflow: hidden;
     justify-content: center;
     grid-column-gap: 10px;
 
