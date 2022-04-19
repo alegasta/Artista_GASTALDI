@@ -130,7 +130,6 @@ body{
     color: white;
     padding: 15px 20px;
     margin-top: 5px;
-    
 }
 
 .flexBarHeader{
@@ -288,12 +287,13 @@ body{
 }
 .portada__imagen img{
     width: 270px;
-    
-    
+
+
 }
 .img3{
     grid-column: 3;
-    
+
+
     animation-name: fadeIn;
     animation-duration: 1s;
 }
@@ -384,6 +384,8 @@ body{
     margin: 0 auto;
 }
 .gridBio{
+    animation-name: fadeIn;
+    animation-duration: 2s;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -391,48 +393,48 @@ body{
     padding: 10px;
     grid-row-gap: 60px;
     grid-column-gap: 20px;
-    
+    align-items: center;
+    justify-items: center;
 }
-
-.bio1 {
+.animacionBio1{
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+.bio1 p{
     grid-column: 1;
     grid-row: 1;
     margin: 10px;
-    font-family: 'roboto';
-    text-align: justify;
-    font-size: 90%;
-    align-items: center;
-    justify-items: center;
-    text-align: justify;
 }
+
 .imgBio1{
-    margin: 10px;
-    width: 480px;
+    height: 285px;
     grid-column: 2;
     grid-row: 1;
-    align-items: center;
-    justify-items: center;
 }
 .imgBio2{
-    margin: 10px;
-    width: 480px;
+    width: 490px;
+    
     grid-column: 1;
     grid-row: 2;
-    align-items: center;
-    justify-items: center;
-}
-.bio2 {
-    grid-column: 2;
-    grid-row: 2;
-    margin: 10px;
-    font-family: 'roboto';
-    text-align: justify;
-    font-size: 90%;
-    align-items: center;
-    justify-items: center;
-    text-align: justify;
 }
 
+.animacionBio2{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+}
+.bio2 p{
+    grid-column: 2;
+    grid-row: 2;
+
+}
+.imgBio2{
+    animation-name: slideInUp;
+    animation-duration: 1s;
+}
+.imgBio1{
+    animation-name: slideInDown;
+    animation-duration: 1s;
+}
 /*==========================================================================================================*/
 /*====================================================MUSICA================================================*/
 /*
