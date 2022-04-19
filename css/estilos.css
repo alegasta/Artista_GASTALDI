@@ -321,6 +321,8 @@ body{
 
 /*=================================================CONTACTO================================================*/
 .mainContac{
+    animation-name: fadeIn;
+    animation-duration: 2s;
     width: 90%;
     margin: 0 auto;
 }
@@ -337,13 +339,13 @@ body{
     text-align: center;
     margin: 5px;
     padding: 10px 0;
-    font-family: 'roboto';
+    
 }
 
 .formulario h4{
     text-align: center;
     padding: 10px 0;
-    font-family: 'roboto';
+    
 }
 
 .comentario{
@@ -354,7 +356,7 @@ body{
 .formulario h6{
     text-align: center;
     padding: 10px 0;
-    font-family: 'roboto';
+    
 }
 
 .formulario ul li{
@@ -368,13 +370,13 @@ body{
 
 .gridImput{
     display: grid;
-    grid-template-columns: 480px auto 300px;
-    justify-items: start;
+    grid-template-columns: 380px auto 300px;
+    justify-items: center;
     
 }
 .gridImput--p p{
     padding: 10px 0;
-    font-family: 'roboto';
+    
 }
 /*=========================================================================================================*/
 
@@ -445,12 +447,14 @@ body{
 }
 */
 .gridMusicRep{
-    margin-inline: 100px;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    
     margin-top: 60px;
     display: grid;
     grid-template-columns: auto auto;
     
-    grid-column-gap: 300px;
+    grid-column-gap: 200px;
     grid-template-areas: "rep1 rep2";
     justify-items: stretch;
     justify-content: center;
@@ -463,6 +467,8 @@ body{
 }
 
 .gridVideosRep{
+    animation-name: fadeIn;
+    animation-duration: 6s;
     margin: 40px 40px;
     padding: 10px;
     display: grid;
@@ -495,6 +501,8 @@ body{
 
 /*====================================================COACHVOCAL============================================*/
 .mainCoach{
+    animation-name: fadeIn;
+    animation-duration: 2s;
     width: 90%;
     max-width: 850px;
     margin-left: auto;
@@ -507,12 +515,16 @@ body{
     padding: 10px;
 }
 .coach p{
+    animation-name: slideInLeft;
+    animation-duration: 1s;
     margin: 10px;
     font-family: 'roboto';
     text-align: justify;
     font-size: 90%;
 }
 .coachVideo{
+    animation-name: slideInUp;
+    animation-duration: 1s;
     display: flex;
     justify-content: center;
 }
