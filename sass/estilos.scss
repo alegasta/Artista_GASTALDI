@@ -1,0 +1,332 @@
+@import "colores";
+
+
+* {
+    Margin:0;
+    padding:0;
+}
+
+
+@font-face{
+    font-family: 'roboto' ;/* el nombre que yo quiero que tenga la font*/
+    src: url('../assets/fonts/Roboto-Regular.ttf') /* la ruta donde esta la font*/
+    
+}
+@font-face {
+    font-family: 'brittany';
+    src: url('../assets/fonts/BrittanySignature.ttf');
+}
+@font-face {
+    font-family: 'adelia';
+    src: url('../assets/fonts/adelia.ttf');
+}
+@font-face {
+    font-family: 'bluna';
+    src: url('../assets/fonts/BLunaPienaDemo.ttf');
+}
+@font-face {
+    font-family: 'butter';
+    src: url('../assets/fonts/BUTTERSHINE\ SCRIPT.ttf');
+}
+@font-face {
+    font-family: 'cherolina';
+    src: url('../assets/fonts/Cherolina.ttf');
+}
+@font-face {
+    font-family: 'samantha';
+    src: url('../assets/fonts/samantha.ttf');
+}
+
+/*=====================================APLICACION A TODAS LAS PAGINAS=======================================*/
+
+//Variables de color
+body{
+    background-color: $body-color;
+}
+
+
+.miHeader{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(2,auto);
+    /*text-decoration: none;*/
+    align-items: center;
+    justify-items: center;
+    background-color: $header-footer-color;
+    padding: 15px 10px;
+    width: 100%;
+    justify-content: center;
+}
+//===Anidacion===
+.redesHeader{
+    grid-column: 10;
+    grid-row: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    list-style: none;
+    justify-content: end;
+    align-items: start;
+    padding: 0 10px;
+    margin-right: 10px;
+
+    li{
+        a{
+            &:hover{
+                animation-name: fadeIn;
+                animation-duration: 2s;
+                text-decoration: none;
+            }
+        }
+    }
+    img{
+        align-items: start;
+        /*margin-top: 5px;*/
+        padding: 0 10px;
+        width: 40px;
+        height: 20px;
+        }
+}
+
+
+//===Anidacion===
+.titleHeader{
+    grid-column: 5/8;
+    grid-row: 1;
+    
+    align-items: start;
+    justify-items: center;
+
+    h1 a{
+        display: flex;
+        font-family: 'brittany';
+        text-decoration: none;
+        text-align: center;
+        font-size: 40px;
+        justify-content: center;
+        color: white;   
+        margin: 5px;
+        padding: 10px;
+        
+        
+    }
+}
+.animacionH1{
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+
+//===Anidacion===
+.navBarHeader{
+    grid-column: 1/11;
+    grid-row: 2;
+    /*display: flex;*/
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 15px;
+    
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                font-size: 15px;
+                color: white;
+                padding: 15px 20px;
+                margin-top: 5px;
+            }
+        }
+    } 
+    a{
+        &:hover{
+            background-color: $body-color;
+            color: $header-footer-color;
+            transition: 1s;
+        }
+    }
+}
+
+.flexBarHeader{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+/*li {
+    display: inline-block;
+    
+}*/
+
+.miFooter{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(4,auto);
+    background-color: $header-footer-color;
+    /*padding-bottom: 614px;*/
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*width: 100%;*/
+}
+
+.titleFooter{
+    /*display: flex;*/
+    /*justify-content: right;*/
+    /*padding-right: 180px;*/
+    color: $redes-icon;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    margin-top: 5px; 
+    font-size: smaller;
+    grid-column: 10;
+    grid-row: 2;
+    
+}
+
+//===Anidacion===
+.navBarFooter{
+    grid-column: 1/11;
+    grid-row: 1;
+    padding-top: 30px;
+    
+    li{
+        a{
+            /*font-family: Arial, Helvetica, sans-serif;*/
+        text-decoration: none;
+        
+        /*margin-left: 4px;
+        margin-right: 4px;*/
+        
+        font-size: 15px;
+        justify-content: center;
+        color: $redes-icon;
+        padding: 15px 20px;
+        
+        &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+
+.flexBarFooter{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+//===Anidacion===
+.miFooter{
+    p{
+        grid-column: 1/11;
+        grid-row: 4;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+        text-align: center;
+        justify-items: center;
+        align-items: end;
+        color: white;
+        margin-top: 20px;
+        
+    }
+}
+
+//===Anidacion===
+.redesFooter{
+    grid-column: 10;
+    grid-row: 3;
+    display: flex;
+    text-decoration: none;
+    align-items: start;
+    list-style: none;
+    padding: 0 10px;
+    margin-right: 10px;
+    
+    img{
+        margin-top: 15px;
+        padding: 0 10px;
+        width: 40px;
+        height: 20px;
+        }
+    li{
+        a{
+            &:hover{
+                animation-name: fadeIn;
+                animation-duration: 2s;
+            }
+        }
+    } 
+}
+
+//===Anidacion===
+.burgerMenu{
+    display: none;
+    grid-column: 1;
+    grid-row: 2;
+    
+    img{
+        width: 20px;
+    }
+}
+
+/*==============================================================================================================================================*/
+
+/*==========================================APLICACION DE BEM INDEX========================================*/
+.mainIndex{
+    background-color: $header-footer-color;
+    padding: 0 5px;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    
+}
+.portada{
+    padding-inline: 10px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.portada__imagen {
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-decoration: none;
+    
+    overflow: hidden;
+    justify-content: center;
+    grid-column-gap: 10px;
+    width: 100%;
+    
+    img{
+        width: 270px;
+    }
+}
+
+.img3{
+    grid-column: 3;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+.img1{
+    grid-column: 1;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+}
+.img5{
+    grid-column: 5;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+}
+.img2{
+    grid-column: 2;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+.img4{
+    grid-column: 4;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+/*=========================================================================================================*/
