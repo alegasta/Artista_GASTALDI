@@ -9,5 +9,5 @@ Encabezado: para el encabezado del h1 utilicé el texto “Estrella De Angelis�
 =========================================================================================
 
 EXPLICATIVO DE SASS DENTRO DE MI SITIO PARA ESTA ENTREGA:
-En esta entrega para la parte de SASS apliqué MIXIN y MAP-GET. Para ubicarlo dentro del archivo estilos.scss le realice comentarios “APLICACION DE MAP-GET” y “APLICACION DE MIXIN”.
+En esta entrega para la parte de SASS apliqué MIXIN y MAP-GET. En el archivo estilos.scss la declaracion de variables empieza desde la linea 40 a la 52 y la aplicacion en las lineas 146, 166 y 227 respectivamente.
 =========================================================================================
