@@ -37,6 +37,19 @@
     src: url('../assets/fonts/samantha.ttf');
 }
 
+//==========================================APLICACION DE MIXIN==============================================
+@mixin flex-bar{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+//===========================================================================================================
+//==========================================APLICACION DE MAP-GET============================================
+$estilosmapget: (
+    tFuente: 15px,
+    marg : 5px,
+);
+//===========================================================================================================
 /*=====================================APLICACION A TODAS LAS PAGINAS=======================================*/
 
 //Variables de color
@@ -130,11 +143,12 @@ body{
     ul{
         li{
             a{
+                //==MAP-GET==
                 text-decoration: none;
-                font-size: 15px;
+                font-size:map-get($estilosmapget, tFuente);
                 color: white;
                 padding: 15px 20px;
-                margin-top: 5px;
+                margin-top: map-get($estilosmapget, marg);
             }
         }
     } 
@@ -147,10 +161,12 @@ body{
     }
 }
 
+
+
+//===MIXIN===
 .flexBarHeader{
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    @include flex-bar
+    
 }
 /*li {
     display: inline-block;
@@ -208,11 +224,9 @@ body{
     }
     
 }
-
+//===MIXIN===
 .flexBarFooter{
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    @include flex-bar
 }
 
 //===Anidacion===
