@@ -580,6 +580,53 @@ body{
     display: flex;
     justify-content: center;
 }
+
+/*====================================================MISESCRITOS============================================*/
+.mainEsc{
+    width: 90%;
+    margin: 0 auto;
+}
+.gridEsc{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: 40px 0;
+    padding: 10px;
+    grid-row-gap: 60px;
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+.animacionEsc1{
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+.esc1{
+    p{
+        grid-column: 1;
+        grid-row: 1;
+        margin: 10px;
+    }
+} 
+
+
+
+.animacionEsc2{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+}
+.esc2{
+    p{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+
+
+
 /*====================================================MEDIAQUERIES==========================================*/
 @media screen and (max-width: 849px) {
 
