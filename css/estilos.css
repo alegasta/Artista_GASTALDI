@@ -527,7 +527,7 @@ body {
     background: #aba08a;
     text-align: center;
     width: 100%;
-    height: 70%;
+    height: 45%;
     top: 100px;
     left: -100%;
     padding: 20px;
@@ -591,11 +591,12 @@ body {
 
   .navBarFooter ul {
     padding: 0;
+    justify-content: center;
   }
   .navBarFooter ul li a {
+    padding-inline: 15px;
     font-size: 10px;
     margin: 0;
-    padding-inline: 15px;
     justify-content: space-between;
   }
 
@@ -670,7 +671,7 @@ body {
   }
 
   .gridMusicRep div {
-    position: relative;
+    position: static;
     padding: 15px 0;
   }
 
