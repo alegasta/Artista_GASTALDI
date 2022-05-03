@@ -6,7 +6,11 @@
     padding:0;
 }
 
-
+@font-face{
+    font-family: 'bebas' ;/* el nombre que yo quiero que tenga la font*/
+    src: url('../assets/fonts/BebasNeue-Regular.ttf') /* la ruta donde esta la font*/
+    
+}
 @font-face{
     font-family: 'roboto' ;/* el nombre que yo quiero que tenga la font*/
     src: url('../assets/fonts/Roboto-Regular.ttf') /* la ruta donde esta la font*/
@@ -42,11 +46,12 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    
 }
 //===========================================================================================================
 //=====================================DECLARACION DE VARIABLES DE MAP-GET===================================
 $estilosmapget: (
-    tFuente: 15px,
+    tFuente: 20px,
     marg : 5px,
 );
 //===========================================================================================================
@@ -56,7 +61,9 @@ $estilosmapget: (
 body{
     background-color: $body-color;
 }
-
+#check {
+    display: none;
+}
 
 .miHeader{
     display: grid;
@@ -145,6 +152,7 @@ body{
             a{
                 //==MAP-GET==
                 text-decoration: none;
+                font-family: 'bebas'; ;
                 font-size:map-get($estilosmapget, tFuente);
                 color: white;
                 padding: 15px 20px;
@@ -190,9 +198,9 @@ body{
     /*justify-content: right;*/
     /*padding-right: 180px;*/
     color: $redes-icon;
-    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'bebas';
     margin-top: 5px; 
-    font-size: smaller;
+    font-size: 15px;
     grid-column: 10;
     grid-row: 2;
     
@@ -206,13 +214,13 @@ body{
     
     li{
         a{
-            /*font-family: Arial, Helvetica, sans-serif;*/
+        font-family: 'bebas';
         text-decoration: none;
         
         /*margin-left: 4px;
         margin-right: 4px;*/
         
-        font-size: 15px;
+        font-size: 20px;
         justify-content: center;
         color: $redes-icon;
         padding: 15px 20px;
@@ -557,23 +565,66 @@ body{
 }
 /*====================================================MEDIAQUERIES==========================================*/
 @media screen and (max-width: 849px) {
-    .navbar{
-        position: relative;
+
+.navBarHeader{
+    margin-top: 0;
+    width: 100%;
+    
+    grid-column: 1;
+    grid-row: 1;
+    justify-items: center;
+    align-items: center;
+}
+.navBarHeader{
+    ul{
+        display: block;
+        position: absolute;
+        background: $body-color;
+        text-align: center;
+            li{
+                a{
+                font-size: 40px;
+                }
+            }
     }
 
-.titleHeader 
-.titleHeader{
-    justify-content: center;
-    h1{
-        a{
-        width: 90% ;
-        } 
-    }
+} 
+
+
+.flexBarHeader {
+    position: fixed;
+    width: 100%;
+    height: 95%;
+    top: 110px;
+    left: -100%;
+    padding: 0;
+    transition: all 0.5s;
 }
 
 .flexBarHeader{
-    display: none;
+    padding: 100px;
+    li{
+        display: block;
+        margin: 55px 0;
     }
+}
+.burgerMenu{
+    display: block;
+    
+    
+    cursor: pointer;
+    img{
+        width: 30px;
+        }
+}
+
+#check:checked ~ .flexBarHeader{
+    left: 0;
+}
+.titleHeader{
+    justify-content: center;
+    
+}
 
 .titleHeader{
     grid-column: 1/11;
@@ -605,17 +656,6 @@ body{
     grid-column-gap: none;
 }
 
-.burgerMenu{
-    display: block;
-    grid-column: 1;
-    grid-row: 2;
-    justify-items: center;
-    align-items: center;
-    img{
-        width: 30px;
-        }
-}
-
 
 .titleFooter{
     display: none;
@@ -634,7 +674,6 @@ body{
 .redesHeader{
     display: none;
 }
-
 
 
 
