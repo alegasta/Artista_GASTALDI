@@ -566,6 +566,18 @@ body{
 /*====================================================MEDIAQUERIES==========================================*/
 @media screen and (max-width: 849px) {
 
+    .titleHeader{
+        
+        h1{
+            a{
+            
+                font-size: 32px;
+                
+                
+            }
+        } 
+    }
+
 .navBarHeader{
     margin-top: 0;
     width: 100%;
@@ -577,41 +589,48 @@ body{
 }
 .navBarHeader{
     ul{
-        display: block;
-        position: absolute;
-        background: $body-color;
-        text-align: center;
-            li{
-                a{
-                font-size: 40px;
-                }
+        li{
+            
+            a{
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
             }
+        }
     }
+    
 
 } 
 
 
 .flexBarHeader {
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: $body-color;
+    text-align: center;
+        
     width: 100%;
-    height: 95%;
-    top: 110px;
+    height: 70%;
+    top: 100px;
     left: -100%;
-    padding: 0;
+    padding: 20px;
     transition: all 0.5s;
+    
 }
 
 .flexBarHeader{
-    padding: 100px;
+    
+    
     li{
-        display: block;
-        margin: 55px 0;
+        
+        margin: 10px 20px;
+        
     }
 }
 .burgerMenu{
     display: block;
-    
-    
     cursor: pointer;
     img{
         width: 30px;

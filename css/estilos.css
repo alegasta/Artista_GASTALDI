@@ -500,6 +500,10 @@ body {
 
 /*====================================================MEDIAQUERIES==========================================*/
 @media screen and (max-width: 849px) {
+  .titleHeader h1 a {
+    font-size: 32px;
+  }
+
   .navBarHeader {
     margin-top: 0;
     width: 100%;
@@ -509,32 +513,29 @@ body {
     align-items: center;
   }
 
-  .navBarHeader ul {
-    display: block;
+  .navBarHeader ul li a {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flexBarHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     background: #aba08a;
     text-align: center;
-  }
-  .navBarHeader ul li a {
-    font-size: 40px;
-  }
-
-  .flexBarHeader {
-    position: fixed;
     width: 100%;
-    height: 95%;
-    top: 110px;
+    height: 70%;
+    top: 100px;
     left: -100%;
-    padding: 0;
+    padding: 20px;
     transition: all 0.5s;
   }
 
-  .flexBarHeader {
-    padding: 100px;
-  }
   .flexBarHeader li {
-    display: block;
-    margin: 55px 0;
+    margin: 10px 20px;
   }
 
   .burgerMenu {
