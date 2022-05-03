@@ -378,7 +378,7 @@ body {
 }
 
 .imgBio1 {
-  height: 285px;
+  height: auto;
   grid-column: 2;
   grid-row: 1;
 }
@@ -589,8 +589,14 @@ body {
     display: none;
   }
 
-  .flexBarFooter {
-    display: none;
+  .navBarFooter ul {
+    padding: 0;
+  }
+  .navBarFooter ul li a {
+    font-size: 10px;
+    margin: 0;
+    padding-inline: 15px;
+    justify-content: space-between;
   }
 
   .redesFooter {
