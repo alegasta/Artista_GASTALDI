@@ -513,6 +513,14 @@ body {
     align-items: center;
   }
 
+  .navBarHeader ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: #aba08a;
+    text-align: center;
+  }
   .navBarHeader ul li a {
     font-size: 30px;
     margin: 0;
@@ -520,12 +528,6 @@ body {
   }
 
   .flexBarHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    background: #aba08a;
-    text-align: center;
     width: 100%;
     height: 45%;
     top: 100px;
