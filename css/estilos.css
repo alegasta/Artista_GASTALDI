@@ -378,7 +378,7 @@ body {
 }
 
 .imgBio1 {
-  height: auto;
+  width: 490px;
   grid-column: 2;
   grid-row: 1;
 }
@@ -418,14 +418,31 @@ body {
     margin: 0 auto;
 }
 */
+.musicTitle {
+  padding-top: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.mainMusica h1 {
+  font-family: "bebas";
+  text-justify: center;
+  justify-content: center;
+}
+
+.videoTitle {
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .gridMusicRep {
   animation-name: fadeIn;
   animation-duration: 6s;
-  margin-top: 60px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-column-gap: 200px;
-  grid-template-areas: "rep1 rep2";
+  grid-template-areas: "rep1 rep2 rep3";
   justify-items: stretch;
   justify-content: center;
   padding: 10px;
@@ -439,7 +456,7 @@ body {
 .gridVideosRep {
   animation-name: fadeIn;
   animation-duration: 6s;
-  margin: 40px 40px;
+  margin: 0 40px;
   padding: 10px;
   display: grid;
   grid-template-columns: auto auto;
@@ -513,13 +530,8 @@ body {
     align-items: center;
   }
 
-  .navBarHeader ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    background: #aba08a;
-    text-align: center;
+  .navBarHeader ul li {
+    margin: 10px 20px;
   }
   .navBarHeader ul li a {
     font-size: 30px;
@@ -528,16 +540,19 @@ body {
   }
 
   .flexBarHeader {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: #aba08a;
+    text-align: center;
     width: 100%;
-    height: 70%;
+    height: 45%;
     top: 100px;
     left: -100%;
     padding: 20px;
     transition: all 0.5s;
-  }
-
-  .flexBarHeader li {
-    margin: 10px 20px;
   }
 
   .burgerMenu {
