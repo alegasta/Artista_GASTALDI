@@ -12,8 +12,8 @@
     
 }
 @font-face{
-    font-family: 'roboto' ;/* el nombre que yo quiero que tenga la font*/
-    src: url('../assets/fonts/Roboto-Regular.ttf') /* la ruta donde esta la font*/
+    font-family: 'roboto' ;
+    src: url('../assets/fonts/Roboto-Regular.ttf')
     
 }
 @font-face {
@@ -69,7 +69,7 @@ body{
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(2,auto);
-    /*text-decoration: none;*/
+    
     align-items: center;
     justify-items: center;
     background-color: $header-footer-color;
@@ -102,7 +102,7 @@ body{
     }
     img{
         align-items: start;
-        /*margin-top: 5px;*/
+        
         padding: 0 10px;
         width: 40px;
         height: 20px;
@@ -141,7 +141,7 @@ body{
 .navBarHeader{
     grid-column: 1/11;
     grid-row: 2;
-    /*display: flex;*/
+    
     justify-content: center;
     justify-items: center;
     padding: 10px;
@@ -176,27 +176,19 @@ body{
     @include flex-bar
     
 }
-/*li {
-    display: inline-block;
-    
-}*/
 
 .miFooter{
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(4,auto);
     background-color: $header-footer-color;
-    /*padding-bottom: 614px;*/
+    
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    /*width: 100%;*/
 }
 
 .titleFooter{
-    /*display: flex;*/
-    /*justify-content: right;*/
-    /*padding-right: 180px;*/
     color: $redes-icon;
     font-family: 'bebas';
     margin-top: 5px; 
@@ -216,10 +208,6 @@ body{
         a{
         font-family: 'bebas';
         text-decoration: none;
-        
-        /*margin-left: 4px;
-        margin-right: 4px;*/
-        
         font-size: 20px;
         justify-content: center;
         color: $redes-icon;
@@ -309,7 +297,6 @@ body{
 }
 
 .portada__imagen {
-    /*display: flex;*/
     display: grid;
     grid-template-columns: repeat(5, auto);
     list-style: none;
@@ -473,13 +460,6 @@ body{
 }
 /*==========================================================================================================*/
 /*====================================================MUSICA================================================*/
-/*
-.mainMusica{
-    width: 90%;
-    max-width: 850px;
-    margin: 0 auto;
-}
-*/
 .musicTitle{
     padding-top: 30px;
     text-align: center;
@@ -500,21 +480,13 @@ body{
 .gridMusicRep{
     animation-name: fadeIn;
     animation-duration: 6s;
-
-    
     display: grid;
     grid-template-columns: auto auto auto;
-    
     grid-column-gap: 200px;
     grid-template-areas: "rep1 rep2 rep3";
     justify-items: stretch;
     justify-content: center;
     padding: 10px;
-/*    
-    max-width: 400px;
-    margin: 40px 100px;
-    padding: 10px;
-    */
 }
 
 .gridVideosRep{
@@ -531,23 +503,6 @@ body{
     grid-column-gap: 30px;
     grid-row-gap: 15px;
 }
-
-/*
-.videosRep{
-    display: flex;
-    justify-content: space-around;
-    margin: 40px 40px;
-    padding: 10px;
-    
-}
-*/
-/*
-.videosRep iframe{
-    margin: 0 10px;
-    padding: 10px;
-}
-*/
-
 /*==========================================================================================================*/
 
 /*====================================================COACHVOCAL============================================*/
@@ -685,15 +640,6 @@ body{
     
 }
 
-.flexBarHeader{
-    
-    
-    li{
-        
-        
-        
-    }
-}
 .burgerMenu{
     display: block;
     cursor: pointer;
@@ -744,24 +690,17 @@ body{
 
 .navBarFooter{
     ul{
-    padding: 0;
-    
-    justify-content: center;
-    
+        padding: 0;
+        justify-content: center;
         li{
-            
             a{
-            
-            padding-inline: 15px;
-            font-size: 10px;
-            margin: 0;
-            
-            justify-content: space-between;
+                padding-inline: 15px;
+                font-size: 10px;
+                margin: 0;
+                justify-content: space-between;
             }
         }
     }
-    
-
 } 
 .redesFooter{
     grid-column: 1/11;
@@ -847,15 +786,7 @@ body{
 }
 
 .gridVideosRep{
-    
     display: block;
-    /*grid-template-columns: auto ;
-    grid-template-rows: repeat(6,auto);
-    justify-items: stretch;
-    align-items: center;
-    width: 90%;
-    grid-column-gap: 30px;
-    grid-row-gap: 15px;*/
 }
 .gridVideosRep{
     div{
