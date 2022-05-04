@@ -542,7 +542,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     background: #aba08a;
     text-align: center;
     width: 100%;
