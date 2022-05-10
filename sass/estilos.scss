@@ -550,7 +550,7 @@ body{
     animation-duration: 2s;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     margin: 40px 0;
     padding: 10px;
     grid-row-gap: 60px;
@@ -561,6 +561,11 @@ body{
 .animacionEsc1{
     animation-name: slideInLeft;
     animation-duration: 1s;
+    h2{
+        font-family: 'bebas';
+        text-justify: center;
+        justify-content: center;
+    }
 }
 .esc1{
     p{
@@ -570,13 +575,31 @@ body{
     }
 } 
 
-
-
 .animacionEsc2{
     animation-name: slideInRight;
     animation-duration: 1s;
+    h2{
+        font-family: 'bebas';
+        text-justify: center;
+        justify-content: center;
+    }
 }
 .esc2{
+    p{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+.animacionEsc3{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    h2{
+        font-family: 'bebas';
+        text-justify: center;
+        justify-content: center;
+    }
+}
+.esc3{
     p{
         grid-column: 2;
         grid-row: 2;
@@ -698,7 +721,7 @@ body{
 }
 #carouselExampleIndicators{
     display: block;
-    transition: 2s;
+    transition: .2s;
     animation-name: fadeIn;
     animation-duration: 1s;
     padding-inline: 10px;
