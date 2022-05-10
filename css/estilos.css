@@ -603,6 +603,10 @@ body {
       grid-column-gap: none;
   }
   */
+  .portada {
+    display: none;
+  }
+
   .portada__imagen {
     display: none;
   }
@@ -612,6 +616,8 @@ body {
     transition: 2s;
     animation-name: fadeIn;
     animation-duration: 1s;
+    padding-inline: 10px;
+    padding-bottom: 25px;
   }
 
   .titleFooter {
