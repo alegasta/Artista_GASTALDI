@@ -338,6 +338,10 @@ body{
     animation-duration: 3s;
 }
 
+#carouselExampleIndicators{
+    display: none;
+
+}
 /*=========================================================================================================*/
 /*=================================================CONTACTO================================================*/
 .mainContac{
@@ -624,6 +628,7 @@ body{
 
 .flexBarHeader {
     margin: 0;
+    z-index:100;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -660,6 +665,7 @@ body{
     justify-items: center;
 }
 
+/*
 .portada__imagen .img1{
     display: none;
 }
@@ -679,8 +685,20 @@ body{
     grid-column-gap: none;
     
 }
+
 .portada__imagen {
     grid-column-gap: none;
+}
+*/
+.portada__imagen {
+    display: none;
+}
+#carouselExampleIndicators{
+    display: block;
+    transition: 2s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    
 }
 
 

@@ -277,6 +277,10 @@ body {
   animation-duration: 3s;
 }
 
+#carouselExampleIndicators {
+  display: none;
+}
+
 /*=========================================================================================================*/
 /*=================================================CONTACTO================================================*/
 .mainContac {
@@ -539,6 +543,7 @@ body {
 
   .flexBarHeader {
     margin: 0;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -573,31 +578,40 @@ body {
     justify-items: center;
   }
 
-  .portada__imagen .img1 {
-    display: none;
+  /*
+  .portada__imagen .img1{
+      display: none;
   }
-
-  .portada__imagen .img2 {
-    display: none;
+  .portada__imagen .img2{
+      display: none;
   }
-
-  .portada__imagen .img4 {
-    display: none;
+  .portada__imagen .img4{
+      display: none;
   }
-
-  .portada__imagen .img5 {
-    display: none;
+  .portada__imagen .img5{
+      display: none;
   }
+  .portada__imagen .img3{
+      grid-column: 1/6;
+      width: 100%;
+      justify-content: center;
+      grid-column-gap: none;
 
-  .portada__imagen .img3 {
-    grid-column: 1/6;
-    width: 100%;
-    justify-content: center;
-    grid-column-gap: none;
   }
 
   .portada__imagen {
-    grid-column-gap: none;
+      grid-column-gap: none;
+  }
+  */
+  .portada__imagen {
+    display: none;
+  }
+
+  #carouselExampleIndicators {
+    display: block;
+    transition: 2s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
   }
 
   .titleFooter {
