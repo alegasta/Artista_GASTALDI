@@ -528,7 +528,7 @@ body {
 }
 
 .animacionEsc3 {
-  animation-name: slideInRight;
+  animation-name: slideInLeft;
   animation-duration: 1s;
 }
 .animacionEsc3 h2 {
@@ -603,31 +603,6 @@ body {
     justify-items: center;
   }
 
-  /*
-  .portada__imagen .img1{
-      display: none;
-  }
-  .portada__imagen .img2{
-      display: none;
-  }
-  .portada__imagen .img4{
-      display: none;
-  }
-  .portada__imagen .img5{
-      display: none;
-  }
-  .portada__imagen .img3{
-      grid-column: 1/6;
-      width: 100%;
-      justify-content: center;
-      grid-column-gap: none;
-
-  }
-
-  .portada__imagen {
-      grid-column-gap: none;
-  }
-  */
   .portada {
     display: none;
   }
